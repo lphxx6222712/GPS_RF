@@ -4,9 +4,9 @@
 - [Getting Started](#getting-started)
   * [Installation](#Installation)
   * [Offline Training](#offline-training)
-  * [Online Adaptation](#online-adaptaion)
+  * [Online Adaptation](#online-adaptation)
 - [Publication](#publication)
-- [Project main members](#project-main-members-)
+- [Contacts](#contacts)
 <!-- - [Star History](#star-history)-->
 
 ## Introduction
@@ -25,7 +25,7 @@ The computing environment we tested.
 1. Download and install [Anaconda](https://www.anaconda.com/download) or [Miniconda](https://docs.anaconda.com/miniconda/).
 2. Clone this repo and cd to the project path.
 ```bash
-git clone git@github.com:lphxx6222712/GPS_RF.git
+git clone git@github.com:I3Tlab/GPS_RF.git
 cd GPS_RF
 ```
 3. Create and activate the Conda environment:
@@ -52,10 +52,12 @@ python 1D_adiabatic_demo.py
 ```
 
 #### SPSP RF pulse (Figure 4 in the paper)
+
 Fat suppression (Figure 4a in the paper)
 ```bash
 python 1D_SPSP_demo.py --data_path data_loader/SPSP_TBW_3_SBW_6_pw_23p8ms_exc_width_5mm_water_192x96_conj.mat --notes water
 ```
+
 Fat saturation (Figure 4b in the paper)
 ```bash
 python 1D_SPSP_demo.py --data_path data_loader/SPSP_TBW_3_SBW_6_pw_23p8ms_exc_width_5mm_fat_192x96_conj.mat --notes fat
@@ -66,7 +68,7 @@ python 1D_SPSP_demo.py --data_path data_loader/SPSP_TBW_3_SBW_6_pw_23p8ms_exc_wi
 python 2D_AI_demo.py
 ```
 
-### Online adaptation
+### Online Adaptation
 Online adaptation indicates field inhomogeneity compensation by adjusting the RF pulse.
 #### online adaptation for phantom scan (Figure 7 in the paper)
 ```bash
